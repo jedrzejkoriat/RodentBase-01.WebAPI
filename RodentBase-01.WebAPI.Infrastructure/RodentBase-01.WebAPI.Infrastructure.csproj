@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RodentBase_01.WebAPI.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RodentBase-01.WebAPI.Application\RodentBase-01.WebAPI.Application.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\RodentBase-01.WebAPI.Domain\RodentBase-01.WebAPI.Domain.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

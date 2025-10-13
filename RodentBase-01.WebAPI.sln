@@ -5,6 +5,12 @@ VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodentBase-01.WebAPI.API", "RodentBase-01.WebAPI.API\RodentBase-01.WebAPI.API.csproj", "{77DCD9FC-EF75-4079-88C0-FA474EA17819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodentBase-01.WebAPI.Application", "RodentBase-01.WebAPI.Application\RodentBase-01.WebAPI.Application.csproj", "{C93F1895-2368-4487-8BF8-586ADF890092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodentBase-01.WebAPI.Infrastructure", "RodentBase-01.WebAPI.Infrastructure\RodentBase-01.WebAPI.Infrastructure.csproj", "{5D0659E9-466B-4236-8E9C-392245363B11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodentBase-01.WebAPI.Domain", "RodentBase-01.WebAPI.Domain\RodentBase-01.WebAPI.Domain.csproj", "{65A814FA-EF96-4F89-809D-B2E406C20BA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{77DCD9FC-EF75-4079-88C0-FA474EA17819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77DCD9FC-EF75-4079-88C0-FA474EA17819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77DCD9FC-EF75-4079-88C0-FA474EA17819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93F1895-2368-4487-8BF8-586ADF890092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93F1895-2368-4487-8BF8-586ADF890092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93F1895-2368-4487-8BF8-586ADF890092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93F1895-2368-4487-8BF8-586ADF890092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0659E9-466B-4236-8E9C-392245363B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0659E9-466B-4236-8E9C-392245363B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0659E9-466B-4236-8E9C-392245363B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0659E9-466B-4236-8E9C-392245363B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A814FA-EF96-4F89-809D-B2E406C20BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A814FA-EF96-4F89-809D-B2E406C20BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A814FA-EF96-4F89-809D-B2E406C20BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A814FA-EF96-4F89-809D-B2E406C20BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
