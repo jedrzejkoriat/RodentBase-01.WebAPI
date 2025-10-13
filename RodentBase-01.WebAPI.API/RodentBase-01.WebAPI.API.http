@@ -1,6 +1,0 @@
-@RodentBase_01.WebAPI.API_HostAddress = http://localhost:5281
-
-GET {{RodentBase_01.WebAPI.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
