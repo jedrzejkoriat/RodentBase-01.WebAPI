@@ -6,7 +6,7 @@ namespace RodentBase_01.WebAPI.API.Configuration;
 
 public static class IServiceCollectionExtensions
 {
-    public static IServiceCollection AddCustomRateLimiter(this IServiceCollection services)
+    public static IServiceCollection AddRateLimiterConfiguration(this IServiceCollection services)
     {
         services.AddRateLimiter(options =>
         {
@@ -61,6 +61,17 @@ public static class IServiceCollectionExtensions
              });
         });
 
+        return services;
+    }
+
+    public static IServiceCollection AddLoggerConfiguration(this IServiceCollection services)
+    {
+        services.AddLogging(builder =>
+        {
+            builder.ClearProviders();
+            builder.AddConsole();
+            builder.AddDebug();
+        });
         return services;
     }
 }

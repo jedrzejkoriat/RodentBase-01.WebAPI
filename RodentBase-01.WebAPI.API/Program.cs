@@ -3,9 +3,9 @@ using RodentBase_01.WebAPI.API.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddCustomRateLimiter();
+builder.Services.AddRateLimiterConfiguration();
+builder.Services.AddSwaggerConfiguration();
+builder.Services.AddLoggerConfiguration();
 
 var app = builder.Build();
 
