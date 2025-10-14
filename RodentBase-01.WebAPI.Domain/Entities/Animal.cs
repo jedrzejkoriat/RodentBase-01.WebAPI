@@ -2,7 +2,7 @@
 
 namespace RodentBase_01.WebAPI.Domain.Entities;
 
-public sealed class Rodent
+public sealed class Animal
 {
     public Guid Id { get; set; }
     public Guid AssociationId { get; set; }
@@ -13,8 +13,8 @@ public sealed class Rodent
     public string Name { get; set; }
     public string? OwnerName { get; set; }
     public string? Comments { get; set; }
-    public string CauseOfDeath { get; set; }
-    public string Variety { get; set; }
-    public string Genotype { get; set; }
+    public string? CauseOfDeath { get; set; }
+    public string? Variety { get; set; }
+    public string? Genotype { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
 }

@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RodentBase-01.WebAPI.Domain\RodentBase-01.WebAPI.Domain.csproj" PrivateAssets="all" />
   </ItemGroup>
 
