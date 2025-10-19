@@ -17,4 +17,9 @@
     <ProjectReference Include="..\RodentBase-01.WebAPI.Domain\RodentBase-01.WebAPI.Domain.csproj" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contracts\Application\" />
+    <Folder Include="Contracts\Infrastructure\Reporitories\" />
+  </ItemGroup>
+
 </Project>
