@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\Application\" />
     <Folder Include="Contracts\Infrastructure\Reporitories\" />
   </ItemGroup>
 

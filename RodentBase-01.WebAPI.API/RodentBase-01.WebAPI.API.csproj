@@ -22,8 +22,4 @@
     <ProjectReference Include="..\RodentBase-01.WebAPI.Infrastructure\RodentBase-01.WebAPI.Infrastructure.csproj" PrivateAssets="all" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
