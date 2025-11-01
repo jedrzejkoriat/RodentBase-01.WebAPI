@@ -17,4 +17,7 @@ public sealed class Animal
     public string? Variety { get; set; }
     public string? Genotype { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
+    public Association Association { get; set; }
+    public Litter Litter { get; set; }
+    public User? Owner { get; set; }
 }

@@ -7,4 +7,6 @@ public sealed class Association
     public bool IsDeleted { get; set; }
     public bool IsPublic { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
+    public IEnumerable<Animal> Animals { get; set; } = Enumerable.Empty<Animal>();
+    
 }

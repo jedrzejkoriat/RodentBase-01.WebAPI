@@ -13,4 +13,9 @@ public sealed class Litter
     public bool IsRegistered { get; set; }
     public DateTime DateOfBirth { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
+    public IEnumerable<Animal> Animals { get; set; } = Enumerable.Empty<Animal>();
+    public Species Species { get; set; }
+    public User? Breeder { get; set; }
+    public Animal? Father { get; set; }
+    public Animal? Mother { get; set; }
 }

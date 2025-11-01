@@ -5,5 +5,6 @@ public sealed class Species
     public Guid Id { get; set; }
     public Guid AssociationId { get; set; }
     public string Name { get; set; }
+    public Association Association { get; set; }
     
 }
