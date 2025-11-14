@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Reporitories;
-using RodentBase_01.WebAPI.Infrastructure.Persistance;
 
-namespace RodentBase_01.WebAPI.Infrastructure.Repositories;
+namespace RodentBase_01.WebAPI.Infrastructure.Persistance;
 
 internal class GenericRepository<T> : IGenericRepository<T> where T : class
 {

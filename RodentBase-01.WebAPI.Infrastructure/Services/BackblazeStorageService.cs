@@ -1,6 +1,6 @@
 ﻿using B2Net;
 using B2Net.Models;
-using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Services;
+using RodentBase_01.WebAPI.Application.Contracts.Infrastructure;
 using RodentBase_01.WebAPI.Infrastructure.Helpers;
 
 namespace RodentBase_01.WebAPI.Infrastructure.Services;
