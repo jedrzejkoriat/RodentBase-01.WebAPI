@@ -1,4 +1,5 @@
-﻿using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Reporitories;
+﻿using Microsoft.EntityFrameworkCore;
+using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Reporitories;
 using RodentBase_01.WebAPI.Infrastructure.Persistance;
 
 namespace RodentBase_01.WebAPI.Infrastructure.Repositories;
@@ -14,26 +15,43 @@ internal class GenericRepository<T> : IGenericRepository<T> where T : class
 
     public async Task<bool> AddAsync(T entity)
     {
-        throw new NotImplementedException();
+        await _context.Set<T>().AddAsync(entity);
+
+        return await _context.SaveChangesAsync() > 0;
     }
 
     public async Task<bool> DeleteAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var entity = await _context.Set<T>().FindAsync(id);
+
+        if (entity == null)
+            return false;
+
+        _context.Set<T>().Remove(entity);
+
+        return await _context.SaveChangesAsync() > 0;
     }
 
-    public Task<IEnumerable<T>> GetAllAsync()
+    public async Task<IEnumerable<T>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Set<T>().AsNoTracking().ToListAsync();
     }
 
-    public Task<T> GetByIdAsync(Guid id)
+    public async Task<T> GetByIdAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var entity = await _context.Set<T>().FindAsync(id);
+
+        if (entity == null)
+            return null;
+
+        return entity;
     }
 
-    public Task<bool> UpdateAsync(T entity)
+    public async Task<bool> UpdateAsync(T entity)
     {
-        throw new NotImplementedException();
+        _context.Attach(entity);
+        _context.Entry(entity).State = EntityState.Modified;
+
+        return await _context.SaveChangesAsync() > 0;
     }
 }
