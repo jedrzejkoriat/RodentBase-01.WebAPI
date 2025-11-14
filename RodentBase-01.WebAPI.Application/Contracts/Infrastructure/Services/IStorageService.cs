@@ -1,4 +1,4 @@
-﻿namespace RodentBase_01.WebAPI.Application.Contracts.Infrastructure;
+﻿namespace RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Services;
 
 public interface IStorageService
 {

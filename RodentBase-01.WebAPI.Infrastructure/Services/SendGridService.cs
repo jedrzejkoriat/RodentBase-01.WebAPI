@@ -1,4 +1,4 @@
-﻿using RodentBase_01.WebAPI.Application.Contracts.Infrastructure;
+﻿using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Services;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 

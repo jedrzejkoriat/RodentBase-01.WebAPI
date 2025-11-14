@@ -1,4 +1,4 @@
-﻿namespace RodentBase_01.WebAPI.Infrastructure.Persistance;
+﻿namespace RodentBase_01.WebAPI.Infrastructure.Contracts;
 
 public interface IGenericRepository<T> where T : class
 {

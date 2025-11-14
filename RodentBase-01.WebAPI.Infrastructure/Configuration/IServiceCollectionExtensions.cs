@@ -2,7 +2,7 @@
 using B2Net.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RodentBase_01.WebAPI.Application.Contracts.Infrastructure;
+using RodentBase_01.WebAPI.Application.Contracts.Infrastructure.Services;
 using RodentBase_01.WebAPI.Infrastructure.Services;
 
 namespace RodentBase_01.WebAPI.Infrastructure.Configuration;

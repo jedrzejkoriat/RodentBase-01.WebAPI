@@ -8,7 +8,7 @@ public sealed class Animal
     public Guid AssociationId { get; set; }
     public Guid LitterId { get; set; }
     public Guid? OwnerId { get; set; }
-    public Sex Sex { get; set; }
+    public AnimalSex Sex { get; set; }
     public BreedingStatus BreedingStatus { get; set; }
     public string Name { get; set; }
     public string? OwnerName { get; set; }

@@ -1,4 +1,6 @@
-﻿namespace RodentBase_01.WebAPI.Domain.Entities;
+﻿using RodentBase_01.WebAPI.Domain.Enums;
+
+namespace RodentBase_01.WebAPI.Domain.Entities;
 
 public sealed class User
 {
@@ -14,8 +16,10 @@ public sealed class User
     public string? ZipCode { get; set; }
     public string? City { get; set; }
     public string? Country { get; set; }
+    public string? Latitude { get; set; }
+    public string? Longitude { get; set; }
     public string? PhoneNumber { get; set; }
     public string? Information { get; set; }
     public string? Website { get; set; }
-    public bool IsDeleted { get; set; }
+    public UserStatus Status { get; set; }
 }
